@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <style>
+            img{
+                position: absolute;
+                left: 0px;
+                right: 0px;
+            }
+            body{
+                position: fixed;
+            width: 100%;
+            height: 100%;
+            background-image: url(street.jpg);
+            background-size: 100%;
+            }
+            *{
+                
+	    margin:0;
+	    padding:0;
+        }
+        ul{
+	    list-style: none;
+    	overflow: hidden;
+        }
+        li{
+    	float: left;
+        }
+        li a{
+     	display: block;
+    	text-decoration: none;
+    	color: rgb(0, 0, 0);
+    	padding:24px 36px;
+    	text-align:center;
+        }
+        li a:hover:not(.active){
+     	color: blue;
+        }
+        .search-box
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate( -50%,-50%);
+            background: #ffffff;
+            height: 60px;
+            width: 600px;
+            border-radius: 70px;
+        }
+        .search-btn
+        {
+            background: white;
+            color: #26087b;
+        }
+        .search-text
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate( -50%,-50%);
+            background: #e6d2c1;
+            height: 60px;
+            width: 600px;
+            border-radius: 70px;
+        }
+        .but{
+            width: 60px;
+            background-color: #4a77d4;
+            border: 1px solid #3762bc;
+            color: #fff;
+            padding: 4px 4px;
+            font-size: 15px;
+            border-radius: 56px;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+        }
+        .dropdown {
+  position: relative;
+  display: inline-block;
+}
+ 
+.dropbtn {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+ 
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+ 
+.dropdown:hover .dropdown-content {
+  display:block;
+}
+        </style>
+        
+    </head>
+    <body>
+        <ul>
+            <li><a href="#"> <img src="nasa-logo.svg"alt="nasa-logo"></a></li>
+            <li><a href="#">picture</a></li>
+            <li><a href="#">video</a></li>
+            <li class="dropdown"><a href="#">more</a>
+                <ul class="dropbtn">
+                    <div class="dropdownContent">
+                        <a href="#">map</a>
+                        <a href="#">news</a>
+                    </div>
+                    </ul>
+            </li>
+        </ul>
+        <div id="web_content">
+            <div id="login_background" alt="street.jpg"></div>
+        </div>
+        <div class="search-box">
+            <input class="search-text" name="inputs">
+            <a class="search-btn" href="#">
+            </a>
+        </div>
+        <div>
+            <button class="but" type="button" id="admin-btn" onclick="search">search</button>
+        </div>
+        </style>
+    </head>
+</html>
